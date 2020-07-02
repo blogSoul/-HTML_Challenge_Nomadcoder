@@ -3,18 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="styles.css" rel="stylesheet" />
+    <title>Box Model</title>
+    <style>
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+        background-color: green;
+        height: 100%;
+      }
+      .box {
+        background-color: yellow;
+        width: 50%;
+        height: 50%;
+        padding: 20px 10px 5px 2px;
+      }
+      .inside-box {
+        background-color: blue;
+        width: 50%;
+        height: 50%;
+      }
+    </style>
   </head>
   <body>
-    <h1>Title</h1>
-    <p>
-      Project Gutenberg is a library of over 60,000 free eBooks. Choose among
-      free epub and Kindle eBooks, download them or read them online. You will
-      find the world's great literature here, with focus on older works for
-      which U.S. copyright has expired. Thousands of volunteers digitized and
-      diligently proofread the eBooks, for enjoyment and education.
-    </p>
-    <a href="#">Fake link</a>
+    <div class="box">
+      <div class="inside-box"></div>
+    </div>
   </body>
 </html>
