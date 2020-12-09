@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      @keyframes super {
+        50% {
+          transform: rotate(0.5turn);
+        }
+        100% {
+          transform: rotate(0.5turn);
+        }
+      }
+      .circlebox {
+        animation: super 1s ease-in-out infinite;
+      }
+      @keyframes long {
+        0% {
+          transform: none;
+        }
+        50% {
+          transform: scale(1, 2);
+        }
+        100% {
+          transform: none;
+        }
+      }
+      .square {
+        animation: long 1s ease-in-out infinite;
+      }
+      .square:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .square:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .square:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+      .square:nth-child(4) {
+        animation-delay: 0.6s;
+      }
+      .square:nth-child(5) {
+        animation-delay: 0.8s;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article class="circlebox">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </article>
+      <article>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </article>
+    </section>
+  </body>
+</html>
