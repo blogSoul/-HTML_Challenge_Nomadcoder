@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - My first website.</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      div {
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+      }
+      @media screen and (min-width: 700px) and (max-width: 800px){
+        div {
+          background-color: orange;
+        }
+      }
+      @media screen and (min-width: 800px) and (max-width: 900px){
+        div {
+          background-color: blue;
+        }
+      }
+      @media screen and (min-width: 900px){
+        div {
+          background-color: red;
+        }
+      }
+      span {
+        font-size: 20px;
+      }
+      @media screen and (orientation: landscape){
+        span {
+          display: none;
+        }
+      }
+      @media print {
+        body {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <span> Please flip our phone:(</span>
+  </body>
+</html>
