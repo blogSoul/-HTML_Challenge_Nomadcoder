@@ -1,6 +1,6 @@
 {
     "name" : "blogSoul",
     "scripts": {
-        "start" : "kakao_clone/index.html"
+        "start" : "index.html"
     }
 }
